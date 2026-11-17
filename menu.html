@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Kami — Matcha &amp; Salt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (reuse) ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img class="brand-logo"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYXUDuoC9PUVKNhU-cSk-tisqCFtdi21NN6d0adXVS4NtJmKRQQOUXt0_ZeHcytETF4XlJPswEx4FHOzsBTQ8ZBTbZJRELYFvyMFb7NNynMKqNEwuu0O6GdLVImSUXSa4UFtdCNXq802wBctMPp5rckkq5xEREI6H5I-E7ODuhENM10k5ahnGdJDrOyg-x8FbvDmpxJZi6BqZoGiDaBv6MiiNzQRM8DJ5rubtYlWnu"
+          alt="Matcha &amp; Salt Logo">
+        <div class="brand-text">
+          <span class="brand-name">Matcha &amp; Salt</span>
+          <span class="brand-tagline">Artisanal Café &amp; Bakery</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="/">HOME</a>
+        <a class="nav-link" href="/tentang-kami.html">TENTANG KAMI</a>
+        <a class="nav-link is-active" href="/menu.html">MENU KAMI</a>
+        <a class="nav-link" href="/pencapaian.html">AWARD</a>
+        <a class="nav-link" href="/contact.html">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="icon-btn icon-btn--cart" type="button" aria-label="Shopping Cart">
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="cart-count">2</span>
+        </button>
+        <a class="order-btn" href="#">
+          <span class="material-symbols-outlined">bakery_dining</span>
+          Pesan Sekarang
+        </a>
+        <div class="user-avatar">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main-content">
+    <div class="page-wrapper page-wrapper--menu">
+
+      <!-- ============ MENU HERO ============ -->
+      <section class="menu-hero">
+        <div class="glow glow--1" aria-hidden="true"></div>
+        <div class="glow glow--2" aria-hidden="true"></div>
+
+        <div class="menu-hero-inner">
+          <div class="menu-badge">
+            <span class="material-symbols-outlined badge-icon">spa</span>
+            <span class="badge-text">Katalog Rasa &amp; Kreasi Artisan ✨</span>
+          </div>
+
+          <h1 class="menu-hero-title">Menu Kami</h1>
+          <p class="menu-hero-subtitle">"A Little Matcha, A Little Salt, A Lot of Happiness"</p>
+          <p class="menu-hero-lead">
+            Setiap butir roti dipanggang segar berkala dan setiap cangkir matcha diracik secara tradisional
+            dengan chasen bambu dari bubuk Uji ceremonial grade terbaik.
+          </p>
+
+          <div class="menu-trust">
+            <span class="menu-trust-item">
+              <span class="material-symbols-outlined">verified</span>
+              <span>100% Halal Ingredients</span>
+            </span>
+            <span class="menu-trust-item">
+              <span class="material-symbols-outlined menu-trust-icon--tertiary">bakery_dining</span>
+              <span>Pure French Butter (Elle &amp; Vire)</span>
+            </span>
+            <span class="menu-trust-item">
+              <span class="material-symbols-outlined">local_cafe</span>
+              <span>Uji First Flush Ceremonial Matcha</span>
+            </span>
+          </div>
+
+          <!-- Filter pills -->
+          <div class="filter-bar" role="tablist">
+            <button class="filter-btn" data-target="all" type="button">Semua Menu</button>
+            <button class="filter-btn is-active" data-target="saltbread" type="button">
+              <span class="material-symbols-outlined">lunch_dining</span>
+              Saltbread
+            </button>
+            <button class="filter-btn" data-target="matcha" type="button">
+              <span class="material-symbols-outlined">emoji_food_beverage</span>
+              Matcha Series
+            </button>
+            <button class="filter-btn" data-target="pairing" type="button">
+              <span class="material-symbols-outlined">star</span>
+              Pairing Set
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION: SALTBREAD ============ -->
+      <section class="product-section" id="section-saltbread" data-category="saltbread">
+        <div class="container">
+
+          <!-- Browser window header -->
+          <div class="product-browser-bar">
+            <div class="product-browser-dots">
+              <span class="dot dot--1"></span>
+              <span class="dot dot--2"></span>
+              <span class="dot dot--3"></span>
+              <span class="dot dot--4"></span>
+            </div>
+            <span class="product-browser-label">DAILY BATCH // SALTBREAD ARTISANAL COLLECTION</span>
+            <span class="product-browser-meta">
+              <span class="material-symbols-outlined">schedule</span>
+              Bake Every 2 Hrs
+            </span>
+          </div>
+
+          <!-- Section strip -->
+          <div class="product-section-strip">
+            <div>
+              <h2 class="product-section-title">Shio Pan Kurasi Atelier</h2>
+              <p class="product-section-desc">Renyah rekah di luar dengan butiran Maldon Sea Salt murni, lembut dan buttery berongga di dalam.</p>
+            </div>
+            <span class="product-count-pill">9 Fresh Variants</span>
+          </div>
+
+          <!-- Grid -->
+          <div class="product-grid">
+
+            <!-- 1 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa8rvva912bkrJA-R14b1RIRDjP3rv7S029GmX5sblMhgxXI14pAkmh8uxx9C-cmCL27O3BqX6Pw3OK8ZPd6ldXefY_kTOWNiW9JnjF08ixUhJ6U5kG5ClRNvHUapIJuff-ybv23uiOcBDvWUpud08AVC38bCSdH5ry_WBKv2va93v17wk_qUtMHGvrX26IrEcfD7gJQ5lEsRyadtKqIUu6UHCO26wWJmwpvxqa9eR" alt="The OG Classic">
+                <span class="product-badge product-badge--primary">BEST SELLER</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">The OG Classic</h3>
+                  <span class="product-price">IDR 19.000</span>
+                </div>
+                <p class="product-desc">Classic Japanese Shio Pan dengan Elle &amp; Vire French butter dan taburan garam laut Maldon flakes renyah gurih.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Rich Butter</span>
+                  <span class="product-tag">Maldon Flakes</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh4cVGHlkoEJSfe7ffbQTI2O4V7MOtq3RcMpl4ARDFDd83dBpTKIGNAB0oMjcW-20nyPFyj45lBxUfIGIjmbeUo3QTJdy5C7TW8iaPrtfuQRsJstjVZ4nA-2mLKSTqHsthezy9bc-T2AtUOz870QK135JrzaKpSwbrIQ7-aJHqX8JwZeckxB4lzNPkMj0NaWbCza6Y_dqt-iHaHxsgsLq2URhXvMbFumqajXkNmq1" alt="Truffle Garlic Butter">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Truffle Garlic Butter</h3>
+                  <span class="product-price">IDR 28.000</span>
+                </div>
+                <p class="product-desc">Shio pan bermentega dengan saus truffle black truffle dan bawang putih panggang yang wangi menggoda.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Black Truffle</span>
+                  <span class="product-tag">Roasted Garlic</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6Zc-R1n_u6vYa9jps197Mwgu2LAw7j0rotHTl8AscSelEDCBifBewN9Hikb9LKQXIVgSUKw3t1iXK3pktkxRcoZpC-hDBYlad6EdLXR4ipIQ0qYQfsMByce2A6dSQeVMEb4Z71fObsI0T0Zyb6ZNorxNt_KN_3jtmfXbvPFieni_McxeH9BF8bQbu9hB843sLManweDkTLpSKy528mA73KzVwTzfRD1IZTxErkTi" alt="Cinnamon Brown Sugar">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Cinnamon Brown Sugar</h3>
+                  <span class="product-price">IDR 22.000</span>
+                </div>
+                <p class="product-desc">Manis hangat karamel brown sugar Ceylon cinnamon yang berpadu dengan aroma butter panggang.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Ceylon Cinnamon</span>
+                  <span class="product-tag">Palm Sugar</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Matcha Mochi Filled">
+                <span class="product-badge product-badge--secondary">NEW</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Matcha Mochi Filled</h3>
+                  <span class="product-price">IDR 26.000</span>
+                </div>
+                <p class="product-desc">Shio pan dengan isian mochi kenyal dan matcha Uji ceremonial yang earthy menyeimbangkan gurih butter.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Mochi</span>
+                  <span class="product-tag">Uji Matcha</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCWtcbldgIxX_5JBkUUS-pBvTdLLMuYm-DYVGLA_RARVVW7u7tKew_Df1zA4WWuqY0p6P7EZ9Zjnce6NSaF_KhyAPkOa1JKS782BxJ0uMnChUct-7aTNrj2T6yc5khyyFxo9pPDqEc014hKYKscg_1sRbT1CGOMp8vfnMPbKS27wUxW-lCBwG65s256fxKgBZBX4TPKyuMusQydcQMj_H-N7qlG2sM8zdMw_hwuvc" alt="Cheese &amp; Sea Salt">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Cheese &amp; Sea Salt</h3>
+                  <span class="product-price">IDR 24.000</span>
+                </div>
+                <p class="product-desc">Keju cheddar tua parut yang dipanggang keemasan dengan taburan garam laut Maldon yang renyah.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Aged Cheddar</span>
+                  <span class="product-tag">Maldon Salt</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh4cVGHlkoEJSfe7ffbQTI2O4V7MOtq3RcMpl4ARDFDd83dBpTKIGNAB0oMjcW-20nyPFyj45lBxUfIGIjmbeUo3QTJdy5C7TW8iaPrtfuQRsJstjVZ4nA-2mLKSTqHsthezy9bc-T2AtUOz870QK135JrzaKpSwbrIQ7-aJHqX8JwZeckxB4lzNPkMj0NaWbCza6Y_dqt-iHaHxsgsLq2URhXvMbFumqajXkNmq1" alt="Chocolate Hazelnut">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Chocolate Hazelnut</h3>
+                  <span class="product-price">IDR 24.000</span>
+                </div>
+                <p class="product-desc">Dark chocolate 60% dan hazelnut panggang cincang di atas shio pan hangat yang bermentega.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Dark Chocolate</span>
+                  <span class="product-tag">Hazelnut</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6Zc-R1n_u6vYa9jps197Mwgu2LAw7j0rotHTl8AscSelEDCBifBewN9Hikb9LKQXIVgSUKw3t1iXK3pktkxRcoZpC-hDBYlad6EdLXR4ipIQ0qYQfsMByce2A6dSQeVMEb4Z71fObsI0T0Zyb6ZNorxNt_KN_3jtmfXbvPFieni_McxeH9BF8bQbu9hB843sLManweDkTLpSKy528mA73KzVwTzfRD1IZTxErkTi" alt="Yuzu Honey">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Yuzu Honey</h3>
+                  <span class="product-price">IDR 25.000</span>
+                </div>
+                <p class="product-desc">Selai yuzu Jepang dan madu akasia dengan sentuhan zest citrus segar yang menyegarkan.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Yuzu</span>
+                  <span class="product-tag">Acacia Honey</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Spicy Mentaiko">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Spicy Mentaiko</h3>
+                  <span class="product-price">IDR 28.000</span>
+                </div>
+                <p class="product-desc">Mentaiko (cod roe) dengan mayonnaise Jepang pedas lembut dan nori bubuk di atas shio pan.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Mentaiko</span>
+                  <span class="product-tag">Nori</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa8rvva912bkrJA-R14b1RIRDjP3rv7S029GmX5sblMhgxXI14pAkmh8uxx9C-cmCL27O3BqX6Pw3OK8ZPd6ldXefY_kTOWNiW9JnjF08ixUhJ6U5kG5ClRNvHUapIJuff-ybv23uiOcBDvWUpud08AVC38bCSdH5ry_WBKv2va93v17wk_qUtMHGvrX26IrEcfD7gJQ5lEsRyadtKqIUu6UHCO26wWJmwpvxqa9eR" alt="Sakura Red Bean">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Sakura Red Bean</h3>
+                  <span class="product-price">IDR 26.000</span>
+                </div>
+                <p class="product-desc">Pasta azuki merah manis Jepang dengan taburan kelopak sakura asin yang harum lembut.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Azuki</span>
+                  <span class="product-tag">Sakura</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION: MATCHA SERIES ============ -->
+      <section class="product-section" id="section-matcha" data-category="matcha">
+        <div class="container">
+
+          <div class="product-browser-bar product-browser-bar--matcha">
+            <div class="product-browser-dots">
+              <span class="dot dot--1"></span>
+              <span class="dot dot--2"></span>
+              <span class="dot dot--3"></span>
+              <span class="dot dot--4"></span>
+            </div>
+            <span class="product-browser-label">CEREMONIAL BAR // SIGNATURE MATCHA SERIES</span>
+            <span class="product-browser-meta">
+              <span class="material-symbols-outlined">local_cafe</span>
+              Hand-Whisked
+            </span>
+          </div>
+
+          <div class="product-section-strip">
+            <div>
+              <h2 class="product-section-title">Matcha Uji Signature Series</h2>
+              <p class="product-section-desc">Diracik langsung dengan chasen bambu dari ceremonial grade Uji, Kyoto — earthy, umami, dan berbuih lembut.</p>
+            </div>
+            <span class="product-count-pill">6 Signature Drinks</span>
+          </div>
+
+          <div class="product-grid">
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6Zc-R1n_u6vYa9jps197Mwgu2LAw7j0rotHTl8AscSelEDCBifBewN9Hikb9LKQXIVgSUKw3t1iXK3pktkxRcoZpC-hDBYlad6EdLXR4ipIQ0qYQfsMByce2A6dSQeVMEb4Z71fObsI0T0Zyb6ZNorxNt_KN_3jtmfXbvPFieni_McxeH9BF8bQbu9hB843sLManweDkTLpSKy528mA73KzVwTzfRD1IZTxErkTi" alt="Signature Uji Matcha Latte">
+                <span class="product-badge product-badge--primary">SIGNATURE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Signature Uji Matcha Latte</h3>
+                  <span class="product-price">IDR 32.000</span>
+                </div>
+                <p class="product-desc">Iced ceremonial Uji matcha dengan susu segar creamy dan gula aren cair — rasa umami otentik.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Uji Grade</span>
+                  <span class="product-tag">Fresh Milk</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCWtcbldgIxX_5JBkUUS-pBvTdLLMuYm-DYVGLA_RARVVW7u7tKew_Df1zA4WWuqY0p6P7EZ9Zjnce6NSaF_KhyAPkOa1JKS782BxJ0uMnChUct-7aTNrj2T6yc5khyyFxo9pPDqEc014hKYKscg_1sRbT1CGOMp8vfnMPbKS27wUxW-lCBwG65s256fxKgBZBX4TPKyuMusQydcQMj_H-N7qlG2sM8zdMw_hwuvc" alt="Rose Matcha Latte">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Rose Matcha Latte</h3>
+                  <span class="product-price">IDR 36.000</span>
+                </div>
+                <p class="product-desc">Matcha Uji dengan sirup rose Perancis dan taburan kelopak mawar kering yang harum mewah.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Rose Syrup</span>
+                  <span class="product-tag">Dried Petals</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Sea Salt Cream Cloud Matcha">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Sea Salt Cream Cloud Matcha</h3>
+                  <span class="product-price">IDR 38.000</span>
+                </div>
+                <p class="product-desc">Matcha pekat dengan lapisan sea salt cream cheese foam lembut bergaram seperti awan.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Cheese Foam</span>
+                  <span class="product-tag">Maldon Salt</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6Zc-R1n_u6vYa9jps197Mwgu2LAw7j0rotHTl8AscSelEDCBifBewN9Hikb9LKQXIVgSUKw3t1iXK3pktkxRcoZpC-hDBYlad6EdLXR4ipIQ0qYQfsMByce2A6dSQeVMEb4Z71fObsI0T0Zyb6ZNorxNt_KN_3jtmfXbvPFieni_McxeH9BF8bQbu9hB843sLManweDkTLpSKy528mA73KzVwTzfRD1IZTxErkTi" alt="Lavender Matcha Infused">
+                <span class="product-badge product-badge--secondary">FAVORIT</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Lavender Matcha Infused</h3>
+                  <span class="product-price">IDR 36.000</span>
+                </div>
+                <p class="product-desc">Matcha lembut dengan infus lavender organik Provence yang menenangkan dan floral.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Lavender</span>
+                  <span class="product-tag">Floral</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh4cVGHlkoEJSfe7ffbQTI2O4V7MOtq3RcMpl4ARDFDd83dBpTKIGNAB0oMjcW-20nyPFyj45lBxUfIGIjmbeUo3QTJdy5C7TW8iaPrtfuQRsJstjVZ4nA-2mLKSTqHsthezy9bc-T2AtUOz870QK135JrzaKpSwbrIQ7-aJHqX8JwZeckxB4lzNPkMj0NaWbCza6Y_dqt-iHaHxsgsLq2URhXvMbFumqajXkNmq1" alt="Matcha Espresso Fusion">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Matcha Espresso Fusion</h3>
+                  <span class="product-price">IDR 34.000</span>
+                </div>
+                <p class="product-desc">Dirty matcha dengan double shot espresso Arabika di atas ceremonial matcha dan susu dingin.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Espresso</span>
+                  <span class="product-tag">Arabika</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Kinako Dango Cream Matcha">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Kinako Dango Cream Matcha</h3>
+                  <span class="product-price">IDR 40.000</span>
+                </div>
+                <p class="product-desc">Matcha creamy dengan kinako (bubuk kedelai panggang) dan dango kenyal sebagai topping.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Kinako</span>
+                  <span class="product-tag">Dango</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION: PAIRING SET ============ -->
+      <section class="product-section" id="section-pairing" data-category="pairing">
+        <div class="container">
+
+          <div class="product-browser-bar product-browser-bar--pairing">
+            <div class="product-browser-dots">
+              <span class="dot dot--1"></span>
+              <span class="dot dot--2"></span>
+              <span class="dot dot--3"></span>
+              <span class="dot dot--4"></span>
+            </div>
+            <span class="product-browser-label">CURATED SET // PAIRING BUNDLE SAVINGS</span>
+            <span class="product-browser-meta">
+              <span class="material-symbols-outlined">redeem</span>
+              Save up to 20%
+            </span>
+          </div>
+
+          <div class="product-section-strip">
+            <div>
+              <h2 class="product-section-title">Pairing Set Istimewa</h2>
+              <p class="product-section-desc">Kombinasi shio pan hangat dan minuman matcha signature dengan harga istimewa.</p>
+            </div>
+            <span class="product-count-pill">3 Curated Bundles</span>
+          </div>
+
+          <div class="product-grid">
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCWtcbldgIxX_5JBkUUS-pBvTdLLMuYm-DYVGLA_RARVVW7u7tKew_Df1zA4WWuqY0p6P7EZ9Zjnce6NSaF_KhyAPkOa1JKS782BxJ0uMnChUct-7aTNrj2T6yc5khyyFxo9pPDqEc014hKYKscg_1sRbT1CGOMp8vfnMPbKS27wUxW-lCBwG65s256fxKgBZBX4TPKyuMusQydcQMj_H-N7qlG2sM8zdMw_hwuvc" alt="Paket OG + Signature Matcha">
+                <span class="product-badge product-badge--primary">HEMAT 20%</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Paket OG + Signature Matcha</h3>
+                  <span class="product-price">
+                    <span class="product-price-old">IDR 51.000</span>
+                    IDR 42.000
+                  </span>
+                </div>
+                <p class="product-desc">The OG Classic Shio Pan + Signature Uji Matcha Latte dengan harga bundling lebih hemat.</p>
+                <div class="product-tags">
+                  <span class="product-tag">1 Bread</span>
+                  <span class="product-tag">1 Drink</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Sweet Mochi Indulgence Bundle">
+                <span class="product-badge product-badge--secondary">FAVORIT</span>
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Sweet Mochi Indulgence</h3>
+                  <span class="product-price">
+                    <span class="product-price-old">IDR 95.000</span>
+                    IDR 78.000
+                  </span>
+                </div>
+                <p class="product-desc">Kinako Dango Cream Matcha + Matcha Mochi Salt Bread. Duo kenyal manis gurih favorit pelanggan.</p>
+                <div class="product-tags">
+                  <span class="product-tag">Mochi</span>
+                  <span class="product-tag">Kinako</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh4cVGHlkoEJSfe7ffbQTI2O4V7MOtq3RcMpl4ARDFDd83dBpTKIGNAB0oMjcW-20nyPFyj45lBxUfIGIjmbeUo3QTJdy5C7TW8iaPrtfuQRsJstjVZ4nA-2mLKSTqHsthezy9bc-T2AtUOz870QK135JrzaKpSwbrIQ7-aJHqX8JwZeckxB4lzNPkMj0NaWbCza6Y_dqt-iHaHxsgsLq2URhXvMbFumqajXkNmq1" alt="Bakery Box Sharing">
+              </div>
+              <div class="product-body">
+                <div class="product-head">
+                  <h3 class="product-name">Bakery Box Sharing</h3>
+                  <span class="product-price">IDR 65.000</span>
+                </div>
+                <p class="product-desc">Pilih 3 shio pan favorit: The OG, Truffle Garlic, atau Cinnamon Brown Sugar dalam satu box.</p>
+                <div class="product-tags">
+                  <span class="product-tag">3 Bread</span>
+                  <span class="product-tag">Mix &amp; Match</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <button class="product-btn" type="button">
+                  <span class="material-symbols-outlined">add_shopping_cart</span>
+                  <span>Tambah</span>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA BANNER ============ -->
+      <section class="menu-cta">
+        <div class="container">
+          <div class="menu-cta-card">
+            <div class="menu-cta-text">
+              <h2 class="menu-cta-title">Ingin pesan untuk acara atau hampers?</h2>
+              <p class="menu-cta-desc">Kami menerima bulk order, corporate hampers, dan private tea gathering. Hubungi concierge kami untuk penawaran khusus.</p>
+            </div>
+            <a class="menu-cta-btn" href="contact.html">
+              <span>Hubungi Concierge</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER (reuse) ============ -->
+  <footer class="site-footer">
+    <div class="footer-strip"></div>
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-brand__top">
+            <img class="footer-logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYXUDuoC9PUVKNhU-cSk-tisqCFtdi21NN6d0adXVS4NtJmKRQQOUXt0_ZeHcytETF4XlJPswEx4FHOzsBTQ8ZBTbZJRELYFvyMFb7NNynMKqNEwuu0O6GdLVImSUXSa4UFtdCNXq802wBctMPp5rckkq5xEREI6H5I-E7ODuhENM10k5ahnGdJDrOyg-x8FbvDmpxJZi6BqZoGiDaBv6MiiNzQRM8DJ5rubtYlWnu" alt="Matcha &amp; Salt Logo">
+            <span class="footer-brand__name">Matcha &amp; Salt</span>
+          </div>
+          <p class="footer-quote">"A Little Matcha, A Little Salt, A Lot of Happiness."</p>
+          <div class="footer-social">
+            <a class="social-circle" href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+            <a class="social-circle" href="#" aria-label="Threads"><span class="material-symbols-outlined">alternate_email</span></a>
+            <a class="social-circle" href="#" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Jam Operasional</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <span>Senin - Jumat</span>
+              <span class="footer-list-item__strong">08:00 - 21:00</span>
+            </li>
+            <li class="footer-list-item">
+              <span>Sabtu - Minggu</span>
+              <span class="footer-list-item__strong">07:30 - 22:00</span>
+            </li>
+            <li class="footer-fresh">
+              <span class="material-symbols-outlined">schedule</span>
+              Fresh Batch Salt Bread Every 2 Hours
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Outlet Atelier</h4>
+          <ul class="footer-outlets">
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Yogyakarta (Main Atelier)</p>
+                <p class="footer-outlet-addr">Jl. Palagan Tentara Pelajar No. 42</p>
+              </div>
+            </li>
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Solo Tea Pavilion</p>
+                <p class="footer-outlet-addr">Jl. Slamet Riyadi No. 118</p>
+              </div>
+            </li>
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Bandung Bakery Corner</p>
+                <p class="footer-outlet-addr">Jl. Riau No. 89</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Hubungi Kami</h4>
+          <p class="footer-desc">Punya pesanan hantaran, private tea gathering, atau kolaborasi?</p>
+          <a class="footer-email-btn" href="mailto:hi@matchaandsalt.id">
+            <span class="material-symbols-outlined">mail</span>
+            hi@matchaandsalt.id
+          </a>
+          <p class="footer-phone">
+            <span class="material-symbols-outlined">call</span>
+            +62 812-3456-7890
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Matcha &amp; Salt Artisanal Café &amp; Bakery. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat Layanan</a>
+          <a href="#">Sertifikasi Halal &amp; Higiene</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== Menu Filter ===== */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productSections = document.querySelectorAll('.product-section');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        const target = btn.dataset.target;
+
+        productSections.forEach(section => {
+          if (target === 'all' || section.dataset.category === target) {
+            section.style.display = '';
+            section.classList.add('is-visible');
+          } else {
+            section.style.display = 'none';
+            section.classList.remove('is-visible');
+          }
+        });
+
+        /* Smooth scroll ke section pertama */
+        if (target !== 'all') {
+          const first = document.querySelector(`.product-section[data-category="${target}"]`);
+          if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ===== Product add-to-cart feedback ===== */
+    document.querySelectorAll('.product-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.add('is-added');
+        btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span><span>Ditambahkan!</span>';
+        setTimeout(() => {
+          btn.classList.remove('is-added');
+          btn.innerHTML = '<span class="material-symbols-outlined">add_shopping_cart</span><span>Tambah</span>';
+        }, 1400);
+      });
+    });
+  </script>
+
+</body>
+</html>

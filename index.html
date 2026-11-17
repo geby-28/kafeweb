@@ -1,1 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Matcha &amp; Salt</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (reuse) ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img class="brand-logo"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYXUDuoC9PUVKNhU-cSk-tisqCFtdi21NN6d0adXVS4NtJmKRQQOUXt0_ZeHcytETF4XlJPswEx4FHOzsBTQ8ZBTbZJRELYFvyMFb7NNynMKqNEwuu0O6GdLVImSUXSa4UFtdCNXq802wBctMPp5rckkq5xEREI6H5I-E7ODuhENM10k5ahnGdJDrOyg-x8FbvDmpxJZi6BqZoGiDaBv6MiiNzQRM8DJ5rubtYlWnu"
+          alt="Matcha &amp; Salt Logo">
+        <div class="brand-text">
+          <span class="brand-name">Matcha &amp; Salt</span>
+          <span class="brand-tagline">Artisanal Café &amp; Bakery</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link is-active" href="/">HOME</a>
+        <a class="nav-link" href="/tentang-kami.html">TENTANG KAMI</a>
+        <a class="nav-link" href="/menu.html">MENU KAMI</a>
+        <a class="nav-link" href="/pencapaian.html">AWARD</a>
+        <a class="nav-link" href="/contact.html">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="icon-btn icon-btn--cart" type="button" aria-label="Shopping Cart">
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="cart-count">2</span>
+        </button>
+        <a class="order-btn" href="#">
+          <span class="material-symbols-outlined">bakery_dining</span>
+          Pesan Sekarang
+        </a>
+        <div class="user-avatar">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main-content">
+    <div class="page-wrapper page-wrapper--home">
+
+      <!-- Top scallop bar -->
+      <div class="scallop-bar" aria-hidden="true">
+        <svg viewBox="0 0 1200 20" preserveAspectRatio="none">
+          <path d="M0,0 C150,18 350,-8 500,10 C650,26 850,-4 1000,12 C1100,20 1180,6 1200,0 L1200,20 L0,20 Z"/>
+        </svg>
+      </div>
+
+      <!-- ============ HERO HOME ============ -->
+      <section class="hero-home">
+        <div class="glow glow--1" aria-hidden="true"></div>
+        <div class="glow glow--2" aria-hidden="true"></div>
+
+        <div class="hero-home-inner">
+
+          <!-- LEFT: Typography -->
+          <div class="hero-home-left">
+            <div class="hero-home-badge">
+              <span class="material-symbols-outlined badge-icon">spa</span>
+              <span class="badge-text">Artisanal Bakery &amp; Ceremonial Tea Atelier</span>
+              <span class="material-symbols-outlined badge-icon badge-icon--heart">favorite</span>
+            </div>
+
+            <div class="hero-home-headline">
+              <svg class="hero-home-doodle" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M12 36C12 36 14 18 32 14C32 14 36 28 20 34C16 35.5 12 36 12 36Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                <path d="M18 31C24 24 28 20 28 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
+                <circle cx="36" cy="12" fill="currentColor" r="2"/>
+              </svg>
+
+              <h1 class="hero-home-title">
+                <span class="hero-home-line-1">A Little Matcha,</span>
+                <span class="hero-home-line-2">A Little Salt,</span>
+                <span class="hero-home-line-3">
+                  A Lot of Happiness.
+                  <svg class="hero-home-underline" viewBox="0 0 320 12" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                    <path d="M3 8.5C65 2.5 160 1.5 317 7.5" stroke="currentColor" stroke-linecap="round" stroke-width="4.5"/>
+                  </svg>
+                </span>
+              </h1>
+            </div>
+
+            <p class="hero-home-lead">
+              Nikmati harmoni sempurna matcha seremonial Uji dengan kehangatan artisan salt bread panggang segar setiap hari. Lembut, gurih bermentega, dan manis lembut yang menenangkan jiwa.
+            </p>
+
+            <div class="hero-home-cta">
+              <a class="btn-primary" href="#">
+                <span>Explore Our Menu</span>
+                <span class="material-symbols-outlined">east</span>
+              </a>
+              <a class="btn-soft" href="#">
+                <span class="material-symbols-outlined">storefront</span>
+                <span>Temukan Outlet Terdekat</span>
+              </a>
+            </div>
+
+            <div class="hero-home-social-proof">
+              <div class="avatar-stack">
+                <div class="avatar-stack__item avatar-stack__item--1">NS</div>
+                <div class="avatar-stack__item avatar-stack__item--2">KP</div>
+                <div class="avatar-stack__item avatar-stack__item--3">AT</div>
+              </div>
+              <div class="hero-home-rating">
+                <div class="hero-home-rating__top">
+                  <span>★ 4.9/5.0</span>
+                  <span class="hero-home-rating__sep">·</span>
+                  <span class="hero-home-rating__text">Lebih dari 4,200+ cangkir matcha diseduh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <div class="hero-home-right">
+            <div class="hero-arch-bg" aria-hidden="true"></div>
+
+            <div class="hero-image-frame">
+              <div class="hero-image-wrap">
+                <img class="hero-image"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6Zc-R1n_u6vYa9jps197Mwgu2LAw7j0rotHTl8AscSelEDCBifBewN9Hikb9LKQXIVgSUKw3t1iXK3pktkxRcoZpC-hDBYlad6EdLXR4ipIQ0qYQfsMByce2A6dSQeVMEb4Z71fObsI0T0Zyb6ZNorxNt_KN_3jtmfXbvPFieni_McxeH9BF8bQbu9hB843sLManweDkTLpSKy528mA73KzVwTzfRD1IZTxErkTi"
+                  alt="Uji Matcha Latte &amp; Shio Pan">
+                <div class="hero-image-overlay"></div>
+                <div class="hero-image-caption">
+                  <div>
+                    <span class="hero-image-caption__label">Pairing of the Month</span>
+                    <p class="hero-image-caption__title">Uji Matcha Latte &amp; Shio Pan</p>
+                  </div>
+                  <span class="hero-image-caption__price">IDR 48K</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge--top">
+              <div class="floating-badge__icon floating-badge__icon--secondary">
+                <span class="material-symbols-outlined">bakery_dining</span>
+              </div>
+              <div class="floating-badge__text">
+                <span class="floating-badge__title">Freshly Baked</span>
+                <span class="floating-badge__sub">Every 2 Hours In-Store</span>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge--bottom">
+              <div class="floating-badge__icon floating-badge__icon--primary">
+                <span class="material-symbols-outlined">eco</span>
+              </div>
+              <div class="floating-badge__text">
+                <span class="floating-badge__title floating-badge__title--primary">100% Ceremonial Grade</span>
+                <span class="floating-badge__sub">First Flush harvested in Uji, Kyoto</span>
+              </div>
+            </div>
+
+            <div class="floating-daisy" aria-hidden="true">
+              <span class="material-symbols-outlined">yard</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ VALUES BAR ============ -->
+      <section class="values-section">
+        <div class="values-wave" aria-hidden="true">
+          <svg viewBox="0 0 1200 16" preserveAspectRatio="none">
+            <path d="M0,0 C300,14 600,0 900,12 C1050,18 1150,6 1200,0 L1200,0 L0,0 Z"/>
+          </svg>
+        </div>
+
+        <div class="container">
+          <div class="values-header">
+            <span class="values-kicker">Craftsmanship &amp; Integrity</span>
+            <h2 class="values-title">Sentuhan Kasih di Setiap Butir &amp; Tegukan</h2>
+            <p class="values-desc">Kami menjaga standar artisan Jepang dengan bahan-bahan murni terbaik tanpa bahan pengawet.</p>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon value-icon--primary">
+                <span class="material-symbols-outlined">energy_savings_leaf</span>
+              </div>
+              <span class="value-kicker value-kicker--primary">Authentic Uji Origin</span>
+              <h3 class="value-title">Premium Matcha</h3>
+              <p class="value-text">Dipetik dari kebun teh generasi kelima di Uji, menghasilkan aroma earthy yang kaya umami serta warna giok alami.</p>
+              <div class="value-footer value-footer--primary">
+                <span>Tanpa perisa buatan</span>
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon value-icon--secondary">
+                <span class="material-symbols-outlined">oven_gen</span>
+              </div>
+              <span class="value-kicker value-kicker--secondary">Slow Fermentation</span>
+              <h3 class="value-title">Freshly Made Everyday</h3>
+              <p class="value-text">Salt bread dipanggang hangat berkala setiap 2 jam dengan lelehan Elle &amp; Vire butter Prancis dan serpihan garam laut Maldon.</p>
+              <div class="value-footer value-footer--secondary">
+                <span>Always warm &amp; fluffy</span>
+                <span class="material-symbols-outlined">heat</span>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon value-icon--tertiary">
+                <span class="material-symbols-outlined">local_cafe</span>
+              </div>
+              <span class="value-kicker value-kicker--tertiary">Artisan Barista</span>
+              <h3 class="value-title">Signature Drinks</h3>
+              <p class="value-text">Eksplorasi rasa modern mulai dari Sea Salt Cream Cloud Matcha hingga Lavender Matcha Infused yang lembut di lidah.</p>
+              <div class="value-footer value-footer--tertiary">
+                <span>Hand-whisked chasen</span>
+                <span class="material-symbols-outlined">bubble_chart</span>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon value-icon--rose">
+                <span class="material-symbols-outlined">volunteer_activism</span>
+              </div>
+              <span class="value-kicker value-kicker--secondary">Wholesome Mind</span>
+              <h3 class="value-title">Made with Love</h3>
+              <p class="value-text">Dibuat penuh ketelitian dan ketulusan, menghadirkan sudut tenang di tengah hiruk pikuk keseharian Anda.</p>
+              <div class="value-footer value-footer--secondary">
+                <span>100% Halal Ingredients</span>
+                <span class="material-symbols-outlined">favorite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROMO SECTION ============ -->
+      <section class="promo-section">
+        <div class="container">
+          <div class="promo-browser">
+
+            <div class="promo-browser-bar">
+              <div class="promo-browser-dots">
+                <span class="dot dot--1"></span>
+                <span class="dot dot--2"></span>
+                <span class="dot dot--3"></span>
+                <span class="dot dot--4"></span>
+              </div>
+              <div class="promo-browser-label">
+                <span class="material-symbols-outlined">cake</span>
+                <span>WEEKLY DELIGHT // PROMO SPESIAL MINGGU INI</span>
+              </div>
+              <div class="promo-browser-status">
+                <span class="live-pulse"></span>
+                <span>Live Inventory</span>
+              </div>
+            </div>
+
+            <div class="promo-body">
+              <div class="promo-header">
+                <div class="promo-header__left">
+                  <div class="promo-header__kicker">
+                    <span class="material-symbols-outlined">local_activity</span>
+                    <span>Pilihan Menu Terbaik Minggu Ini</span>
+                  </div>
+                  <h2 class="promo-title">Penawaran Manis Untukmu ♥</h2>
+                  <p class="promo-desc">Nikmati paket bundling favorit dengan paduan rasa artisanal harga istimewa.</p>
+                </div>
+                <a class="promo-all-link" href="#">
+                  <span>Jelajahi Promo Lainnya</span>
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+
+              <div class="promo-grid">
+
+                <article class="promo-card">
+                  <span class="promo-card-badge promo-card-badge--secondary">Hemat 20%</span>
+                  <div class="promo-image">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCWtcbldgIxX_5JBkUUS-pBvTdLLMuYm-DYVGLA_RARVVW7u7tKew_Df1zA4WWuqY0p6P7EZ9Zjnce6NSaF_KhyAPkOa1JKS782BxJ0uMnChUct-7aTNrj2T6yc5khyyFxo9pPDqEc014hKYKscg_1sRbT1CGOMp8vfnMPbKS27wUxW-lCBwG65s256fxKgBZBX4TPKyuMusQydcQMj_H-N7qlG2sM8zdMw_hwuvc" alt="Paket Matcha + Salt Bread">
+                    <span class="promo-image-label promo-image-label--secondary">Signature Pairing</span>
+                  </div>
+                  <h3 class="promo-card-title">Paket Matcha + Salt Bread</h3>
+                  <p class="promo-card-text">Pairing sempurna The OG Classic Salt Bread renyah buttery bersama Lavender Matcha Latte yang wangi menenangkan.</p>
+                  <div class="promo-card-footer">
+                    <div>
+                      <span class="promo-price-old">Rp 67.000</span>
+                      <span class="promo-price-new">Rp 52.000</span>
+                    </div>
+                    <button class="promo-btn" type="button">
+                      <span>Ambil Promo</span>
+                      <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="promo-card">
+                  <span class="promo-card-badge promo-card-badge--rose">Favorit Pelanggan</span>
+                  <div class="promo-image">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeizRlcK5sJo8S2rl-gp_b8Vfwjk2DiRrZWGdzx2QWSceDHdVmJhag59eHH4cwz7rTPQYr1hBmZUlDn7fokJyLLMglZ3n4PiLIbJp4BsweyUkCQxzB1ZSglbIhEiaf9oYe-1MMewfJ88znTGdvcDakpOwd9AdHqC6DlVsx8D8k8XefwOeqKGJOZdbfKWoXpqw5HqqGtkRzRpAO-1zNdXZG2iLI0eucdDVwks-84uWL" alt="Sweet Mochi Indulgence">
+                    <span class="promo-image-label promo-image-label--primary">Best Seller of Month</span>
+                  </div>
+                  <h3 class="promo-card-title">Sweet Mochi Indulgence</h3>
+                  <p class="promo-card-text">Kinako Dango Cream Matcha manis gurih dipadukan dengan Matcha Mochi Salt Bread bertekstur kenyal lembut.</p>
+                  <div class="promo-card-footer">
+                    <div>
+                      <span class="promo-price-old">Rp 95.000</span>
+                      <span class="promo-price-new">Rp 78.000</span>
+                    </div>
+                    <button class="promo-btn" type="button">
+                      <span>Ambil Promo</span>
+                      <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="promo-card">
+                  <span class="promo-card-badge promo-card-badge--primary">Terlaris</span>
+                  <div class="promo-image">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh4cVGHlkoEJSfe7ffbQTI2O4V7MOtq3RcMpl4ARDFDd83dBpTKIGNAB0oMjcW-20nyPFyj45lBxUfIGIjmbeUo3QTJdy5C7TW8iaPrtfuQRsJstjVZ4nA-2mLKSTqHsthezy9bc-T2AtUOz870QK135JrzaKpSwbrIQ7-aJHqX8JwZeckxB4lzNPkMj0NaWbCza6Y_dqt-iHaHxsgsLq2URhXvMbFumqajXkNmq1" alt="Promo Teman Ngopi">
+                    <span class="promo-image-label promo-image-label--tertiary">Bakery Box Sharing</span>
+                  </div>
+                  <h3 class="promo-card-title">Promo Teman Ngopi (Beli 3)</h3>
+                  <p class="promo-card-text">Bebas pilih 3 salt bread favoritmu: The OG Salt Bread, Truffle Garlic, atau Cinnamon Brown Sugar yang wangi.</p>
+                  <div class="promo-card-footer">
+                    <div>
+                      <span class="promo-price-tag">Paket 3 Buah</span>
+                      <span class="promo-price-new">Rp 65.000</span>
+                    </div>
+                    <button class="promo-btn" type="button">
+                      <span>Ambil Promo</span>
+                      <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="promo-notice">
+                <span class="material-symbols-outlined">info</span>
+                <span>Promo berlaku setiap hari hingga pukul 18:00 WIB untuk dine-in &amp; takeaway di seluruh cabang.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOCATIONS ============ -->
+      <section class="locations-section">
+        <div class="container">
+          <div class="locations-header">
+            <div class="locations-kicker">
+              <span class="material-symbols-outlined">pin_drop</span>
+              <span>Boutique Atelier &amp; Pavilion</span>
+            </div>
+            <h2 class="locations-title">Temukan Kami ♥</h2>
+            <p class="locations-desc">Kunjungi kedai kami yang tenang dan wangi panggangan roti di tiga kota pilihan.</p>
+          </div>
+
+          <div class="locations-card">
+            <div class="locations-tape" aria-hidden="true"></div>
+
+            <div class="locations-grid">
+
+              <div class="map-canvas">
+                <div class="map-overlay" aria-hidden="true"></div>
+
+                <div class="map-pin map-pin--1">
+                  <span class="map-pin__dot"></span>
+                  <span class="map-pin__dot map-pin__dot--ping"></span>
+                  <div class="map-pin__text">
+                    <p class="map-pin__title">Yogyakarta</p>
+                    <p class="map-pin__sub">Main Atelier Palagan</p>
+                  </div>
+                </div>
+
+                <div class="map-pin map-pin--2">
+                  <span class="material-symbols-outlined map-pin__icon">location_on</span>
+                  <div>
+                    <p class="map-pin__title">Solo</p>
+                    <p class="map-pin__sub">Tea Pavilion Slamet Riyadi</p>
+                  </div>
+                </div>
+
+                <div class="map-pin map-pin--3">
+                  <span class="material-symbols-outlined map-pin__icon map-pin__icon--primary">bakery_dining</span>
+                  <div>
+                    <p class="map-pin__title">Bandung</p>
+                    <p class="map-pin__sub">Bakery Corner Jl. Riau</p>
+                  </div>
+                </div>
+
+                <div class="map-legend">📍 3 Outlets Aktif</div>
+              </div>
+
+              <div class="outlet-list-col">
+                <div class="outlet-list-item">
+                  <div class="outlet-list-item__left">
+                    <div class="outlet-list-icon outlet-list-icon--primary">
+                      <span class="material-symbols-outlined">store</span>
+                    </div>
+                    <div>
+                      <div class="outlet-list-title-row">
+                        <h4 class="outlet-list-title">Yogyakarta (Main Atelier &amp; Bakehouse)</h4>
+                        <span class="outlet-list-pill">Flagship</span>
+                      </div>
+                      <p class="outlet-list-addr">Jl. Palagan Tentara Pelajar No. 42 (Dekat Hyatt Regency)</p>
+                      <p class="outlet-list-hours">
+                        <span class="material-symbols-outlined">schedule</span>
+                        Buka Setiap Hari: 08:00 - 21:00 WIB
+                      </p>
+                    </div>
+                  </div>
+                  <a class="outlet-list-arrow" href="#" aria-label="Directions"><span class="material-symbols-outlined">near_me</span></a>
+                </div>
+
+                <div class="outlet-list-item">
+                  <div class="outlet-list-item__left">
+                    <div class="outlet-list-icon outlet-list-icon--secondary">
+                      <span class="material-symbols-outlined">local_cafe</span>
+                    </div>
+                    <div>
+                      <h4 class="outlet-list-title">Solo Tea Pavilion</h4>
+                      <p class="outlet-list-addr">Pakuwon Mall Solo Baru, Ground Floor (GF-18)</p>
+                      <p class="outlet-list-hours">
+                        <span class="material-symbols-outlined">schedule</span>
+                        Buka Setiap Hari: 10:00 - 22:00 WIB
+                      </p>
+                    </div>
+                  </div>
+                  <a class="outlet-list-arrow" href="#" aria-label="Directions"><span class="material-symbols-outlined">near_me</span></a>
+                </div>
+
+                <div class="outlet-list-item">
+                  <div class="outlet-list-item__left">
+                    <div class="outlet-list-icon outlet-list-icon--tertiary">
+                      <span class="material-symbols-outlined">bakery_dining</span>
+                    </div>
+                    <div>
+                      <h4 class="outlet-list-title">Bandung Bakery Corner</h4>
+                      <p class="outlet-list-addr">Paris Van Java Resort Glamour (Concourse Level C-09)</p>
+                      <p class="outlet-list-hours">
+                        <span class="material-symbols-outlined">schedule</span>
+                        Buka Setiap Hari: 10:00 - 22:00 WIB
+                      </p>
+                    </div>
+                  </div>
+                  <a class="outlet-list-arrow" href="#" aria-label="Directions"><span class="material-symbols-outlined">near_me</span></a>
+                </div>
+
+                <a class="outlet-all-btn" href="#">
+                  <span>Lihat Semua Cabang &amp; Rute Google Maps</span>
+                  <span class="material-symbols-outlined">directions</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="testimonials-header">
+            <div>
+              <span class="testimonials-kicker">Community Love</span>
+              <h2 class="testimonials-title">Cerita Mereka</h2>
+              <p class="testimonials-desc">Pengalaman manis sahabat Matcha &amp; Salt dari berbagai kota.</p>
+            </div>
+            <div class="testimonials-rating">
+              <span class="material-symbols-outlined">star</span>
+              <span>4.9 / 5.0 Rating Pelanggan</span>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+              <span class="material-symbols-outlined testimonial-quote-icon testimonial-quote-icon--primary">format_quote</span>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="testimonial-quote">"Perpaduan rasa asin mentega dan gurihnya salt bread bareng Rose Matcha Latte beneran surga dunia! Tempatnya super cozy buat me-time atau ngobrol sore."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--primary">NS</div>
+                <div>
+                  <p class="testimonial-name">Nadhira S.</p>
+                  <p class="testimonial-role">Yogyakarta Atelier Guest</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card testimonial-card--featured">
+              <span class="material-symbols-outlined testimonial-quote-icon testimonial-quote-icon--secondary">format_quote</span>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="testimonial-quote">"The OG Classic salt bread-nya juara! Luarnya beneran renyah, dalamnya fluffy buttery banget. Selalu reorder pas freshly baked batch jam 2 siang."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--secondary">KP</div>
+                <div>
+                  <p class="testimonial-name">Kevin P.</p>
+                  <p class="testimonial-role">Solo Tea Pavilion Guest</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <span class="material-symbols-outlined testimonial-quote-icon testimonial-quote-icon--tertiary">format_quote</span>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="testimonial-quote">"Matcha-nya autentik banget, gak ada aftertaste pahit yang tajem, rasa umami-nya keluar. Dango-nya kenyal dan saus brown sugar-nya pas banget."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--tertiary">AT</div>
+                <div>
+                  <p class="testimonial-name">Amanda T.</p>
+                  <p class="testimonial-role">Bandung Regular Guest</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NEWSLETTER ============ -->
+      <section class="newsletter-section">
+        <div class="newsletter-inner">
+          <div class="newsletter-left">
+            <div class="newsletter-icon">
+              <span class="material-symbols-outlined">mark_email_unread</span>
+            </div>
+            <div>
+              <h3 class="newsletter-title">Ingin Jadwal Fresh Batch di Kotamu?</h3>
+              <p class="newsletter-desc">Daftarkan emailmu untuk update menu musiman, voucher ulang tahun, dan kuota salt bread harian.</p>
+            </div>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Kamu telah terdaftar dalam newsletter Matcha & Salt.');">
+            <input class="newsletter-input" type="email" placeholder="Ketik alamat emailmu..." required>
+            <button class="newsletter-btn" type="submit">Langganan</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER (reuse) ============ -->
+  <footer class="site-footer">
+    <div class="footer-strip"></div>
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-brand__top">
+            <img class="footer-logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYXUDuoC9PUVKNhU-cSk-tisqCFtdi21NN6d0adXVS4NtJmKRQQOUXt0_ZeHcytETF4XlJPswEx4FHOzsBTQ8ZBTbZJRELYFvyMFb7NNynMKqNEwuu0O6GdLVImSUXSa4UFtdCNXq802wBctMPp5rckkq5xEREI6H5I-E7ODuhENM10k5ahnGdJDrOyg-x8FbvDmpxJZi6BqZoGiDaBv6MiiNzQRM8DJ5rubtYlWnu" alt="Matcha &amp; Salt Logo">
+            <span class="footer-brand__name">Matcha &amp; Salt</span>
+          </div>
+          <p class="footer-quote">"A Little Matcha, A Little Salt, A Lot of Happiness."</p>
+          <div class="footer-social">
+            <a class="social-circle" href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+            <a class="social-circle" href="#" aria-label="Threads"><span class="material-symbols-outlined">alternate_email</span></a>
+            <a class="social-circle" href="#" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Jam Operasional</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <span>Senin - Jumat</span>
+              <span class="footer-list-item__strong">08:00 - 21:00</span>
+            </li>
+            <li class="footer-list-item">
+              <span>Sabtu - Minggu</span>
+              <span class="footer-list-item__strong">07:30 - 22:00</span>
+            </li>
+            <li class="footer-fresh">
+              <span class="material-symbols-outlined">schedule</span>
+              Fresh Batch Salt Bread Every 2 Hours
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Outlet Atelier</h4>
+          <ul class="footer-outlets">
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Yogyakarta (Main Atelier)</p>
+                <p class="footer-outlet-addr">Jl. Palagan Tentara Pelajar No. 42</p>
+              </div>
+            </li>
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Solo Tea Pavilion</p>
+                <p class="footer-outlet-addr">Jl. Slamet Riyadi No. 118</p>
+              </div>
+            </li>
+            <li>
+              <span class="material-symbols-outlined footer-outlet-icon">location_on</span>
+              <div>
+                <p class="footer-outlet-name">Bandung Bakery Corner</p>
+                <p class="footer-outlet-addr">Jl. Riau No. 89</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Hubungi Kami</h4>
+          <p class="footer-desc">Punya pesanan hantaran, private tea gathering, atau kolaborasi?</p>
+          <a class="footer-email-btn" href="mailto:hi@matchaandsalt.id">
+            <span class="material-symbols-outlined">mail</span>
+            hi@matchaandsalt.id
+          </a>
+          <p class="footer-phone">
+            <span class="material-symbols-outlined">call</span>
+            +62 812-3456-7890
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Matcha &amp; Salt Artisanal Café &amp; Bakery. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat Layanan</a>
+          <a href="#">Sertifikasi Halal &amp; Higiene</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
